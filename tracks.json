@@ -10,9 +10,10 @@
       "start": "00:00",
       "end": "00:53",
       "repeat": 1,
-      "crossfade": 2.0,
+      "crossfade": 0.0,
       "boost": 1.0,
-      "direct_drop": false
+      "direct_drop": false,
+      "fade_out": 1.0
     },
     {
       "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\mix_2m50s (audio-joiner.com).mp3",
@@ -20,9 +21,10 @@
       "start": "00:20",
       "end": "00:42",
       "repeat": 1,
-      "crossfade": 2.0,
+      "crossfade": 0.0,
       "boost": 1.0,
-      "direct_drop": false
+      "direct_drop": false,
+      "fade_in": 2.0
     },
     {
       "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\mix_2m50s (audio-joiner.com).mp3",
@@ -53,6 +55,14 @@
       "crossfade": 2.0,
       "boost": 1.0,
       "direct_drop": false
+    }
+  ],
+  "overlays": [
+    {
+      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\WhatsApp Ptt 2026-11-02 at 21.28.06.ogg",
+      "title": "WhatsApp PTT Voice Note",
+      "start_at": 51.0,
+      "volume": 1.8
     }
   ]
 }

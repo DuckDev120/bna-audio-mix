@@ -1,6 +1,10 @@
 # Cache directory (large source YouTube WAV downloads)
 cache/
 
+# Large uncompressed audio (keep locally on disk, keep repo lightweight)
+*.wav
+output/*.wav
+
 # Python bytecode & cache
 __pycache__/
 *.py[cod]

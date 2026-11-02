@@ -17,6 +17,7 @@ class AudioMixer:
         self.output_dir = output_dir
         self.target_sr = target_sr
         self.tracks = []
+        self.overlays = []
         os.makedirs(self.cache_dir, exist_ok=True)
         os.makedirs(self.output_dir, exist_ok=True)
 
@@ -93,7 +94,7 @@ class AudioMixer:
             
         return cached_wav
 
-    def add_track(self, url_or_path, start, end, title="", repeat=1, crossfade=2.0, boost=1.0, direct_drop=False):
+    def add_track(self, url_or_path, start, end, title="", repeat=1, crossfade=2.0, boost=1.0, direct_drop=False, fade_in=0.0, fade_out=0.0):
         """
         Adds a track segment to the mixer.
         - url_or_path: YouTube URL, video ID, or local file path
@@ -103,6 +104,8 @@ class AudioMixer:
         - crossfade: Crossfade overlap with next track (default 2.0s)
         - boost: Manual loudness multiplier (default 1.0)
         - direct_drop: If True, incoming track enters without being muffled by crossfade fade-in
+        - fade_in: Fade in duration in seconds for this slice
+        - fade_out: Fade out duration in seconds for this slice
         """
         self.tracks.append({
             "url": url_or_path,
@@ -112,7 +115,24 @@ class AudioMixer:
             "repeat": int(repeat),
             "crossfade": float(crossfade),
             "boost": float(boost),
-            "direct_drop": bool(direct_drop)
+            "direct_drop": bool(direct_drop),
+            "fade_in": float(fade_in),
+            "fade_out": float(fade_out)
+        })
+
+    def add_overlay(self, url_or_path, start_at=0.0, volume=1.0, title=""):
+        """
+        Adds an audio layer to be mixed on top of the master at a specific timestamp.
+        - url_or_path: Audio file (PTT, voice note, sound effect)
+        - start_at: Timeline position in seconds or 'MM:SS' string
+        - volume: Multiplier for overlay loudness
+        - title: Optional name
+        """
+        self.overlays.append({
+            "url": url_or_path,
+            "start_at": self.parse_time(start_at),
+            "volume": float(volume),
+            "title": title or url_or_path
         })
 
     def load_audio_slice(self, file_path, start_sec, end_sec):
@@ -211,6 +231,17 @@ class AudioMixer:
                     gain = 0.98 / peak
                 raw_slice *= gain
                 
+            # Apply slice-level fade in / fade out if requested
+            if item.get("fade_in", 0.0) > 0:
+                fi_len = int(round(item["fade_in"] * sr))
+                fi_len = min(fi_len, len(raw_slice))
+                raw_slice[:fi_len] *= np.sin(np.linspace(0, np.pi / 2, fi_len))[:, None]
+                
+            if item.get("fade_out", 0.0) > 0:
+                fo_len = int(round(item["fade_out"] * sr))
+                fo_len = min(fo_len, len(raw_slice))
+                raw_slice[-fo_len:] *= np.cos(np.linspace(0, np.pi / 2, fo_len))[:, None]
+                
             for r in range(item["repeat"]):
                 title_suffix = f" (פעם {r+1})" if item["repeat"] > 1 else ""
                 segments.append({
@@ -271,6 +302,28 @@ class AudioMixer:
         # Apply global in/out fades
         current = self.apply_fade_in_out(current, sr, in_sec=fade_in, out_sec=fade_out)
         
+        # Apply audio overlays (e.g. voice notes, sound effects)
+        if self.overlays:
+            print(f"[+] Applying {len(self.overlays)} audio overlay(s)...")
+            for ov in self.overlays:
+                ov_path = self.get_or_download_audio(ov["url"])
+                ov_data = self.load_audio_slice(ov_path, 0, 999999) * ov["volume"]
+                start_sample = int(round(ov["start_at"] * sr))
+                end_sample = start_sample + len(ov_data)
+                
+                if end_sample > len(current):
+                    pad = np.zeros((end_sample - len(current), 2))
+                    current = np.vstack([current, pad])
+                    
+                current[start_sample:end_sample] += ov_data
+                dur_ov = len(ov_data) / sr
+                print(f"    Overlaid '{ov['title']}' at {ov['start_at']:.1f}s - {ov['start_at'] + dur_ov:.1f}s")
+                timeline.append({
+                    "track": f"[Overlay] {ov['title']}",
+                    "start": ov["start_at"],
+                    "duration": dur_ov
+                })
+
         # True Peak limiter (-0.3 dBFS)
         peak = np.max(np.abs(current))
         if peak > 0.965:
@@ -344,7 +397,16 @@ def load_config_and_run(config_path):
             repeat=t.get("repeat", 1),
             crossfade=t.get("crossfade", 2.0),
             boost=t.get("boost", 1.0),
-            direct_drop=t.get("direct_drop", False)
+            direct_drop=t.get("direct_drop", False),
+            fade_in=t.get("fade_in", 0.0),
+            fade_out=t.get("fade_out", 0.0)
+        )
+    for ov in cfg.get("overlays", []):
+        mixer.add_overlay(
+            url_or_path=ov["url"],
+            start_at=ov.get("start_at", 0.0),
+            volume=ov.get("volume", 1.0),
+            title=ov.get("title", "")
         )
     return mixer.build(
         output_name=cfg.get("output_name", "master_audio"),
