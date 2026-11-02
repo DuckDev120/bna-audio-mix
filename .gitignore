@@ -1,0 +1,13 @@
+# Cache directory (large source YouTube WAV downloads)
+cache/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment & IDE
+.vscode/
+.idea/
+Thumbs.db
+*.tmp
