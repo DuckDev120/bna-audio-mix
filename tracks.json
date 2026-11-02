@@ -1,68 +1,28 @@
 {
-  "output_name": "master_audio_2",
+  "output_name": "master_audio_3",
   "fade_in": 1.5,
   "fade_out": 2.0,
   "normalize": true,
   "tracks": [
     {
-      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\WhatsApp Audio 2026-11-02 at 20.59.37.mp3",
-      "title": "WhatsApp Audio",
-      "start": "00:00",
-      "end": "00:53",
+      "url": "https://youtu.be/VprC9soNAys",
+      "title": "בחור חדש",
+      "start": "00:01",
+      "end": "00:29",
       "repeat": 1,
-      "crossfade": 0.0,
-      "boost": 1.0,
-      "direct_drop": false,
-      "fade_out": 1.0
+      "crossfade": 2.0,
+      "boost": 1.1,
+      "direct_drop": false
     },
     {
-      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\mix_2m50s (audio-joiner.com).mp3",
-      "title": "Mix Part 1 (20-42)",
-      "start": "00:20",
-      "end": "00:42",
-      "repeat": 1,
-      "crossfade": 0.0,
-      "boost": 1.0,
-      "direct_drop": false,
-      "fade_in": 2.0
-    },
-    {
-      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\mix_2m50s (audio-joiner.com).mp3",
-      "title": "Mix Part 2 (1:22-1:54)",
-      "start": "01:22",
-      "end": "01:54",
+      "url": "https://youtu.be/PR2KMY4JmDE",
+      "title": "שיר מחזור כ\"ג",
+      "start": "00:26",
+      "end": "01:52",
       "repeat": 1,
       "crossfade": 2.0,
       "boost": 1.0,
       "direct_drop": false
-    },
-    {
-      "url": "https://youtu.be/p2V4w9l1LkY",
-      "title": "Penguin Dance (8-24)",
-      "start": "00:08",
-      "end": "00:24",
-      "repeat": 1,
-      "crossfade": 2.0,
-      "boost": 1.2,
-      "direct_drop": false
-    },
-    {
-      "url": "https://youtu.be/ZdKINvOsppM",
-      "title": "OrganicSoup (57-1:07)",
-      "start": "00:57",
-      "end": "01:07",
-      "repeat": 1,
-      "crossfade": 2.0,
-      "boost": 1.0,
-      "direct_drop": false
-    }
-  ],
-  "overlays": [
-    {
-      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\WhatsApp Ptt 2026-11-02 at 21.28.06.ogg",
-      "title": "WhatsApp PTT Voice Note",
-      "start_at": 51.0,
-      "volume": 1.8
     }
   ]
 }
