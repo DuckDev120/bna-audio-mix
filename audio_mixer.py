@@ -56,7 +56,16 @@ class AudioMixer:
     def get_or_download_audio(self, url):
         """Checks cache or downloads audio using yt-dlp."""
         if os.path.exists(url):
-            return url
+            if url.lower().endswith(".wav"):
+                return url
+            base_name = os.path.splitext(os.path.basename(url))[0]
+            clean_name = re.sub(r'[^0-9a-zA-Z_-]', '_', base_name)
+            cached_wav = os.path.join(self.cache_dir, f"local_{clean_name}.wav")
+            if not os.path.exists(cached_wav):
+                print(f"[*] Converting local file '{os.path.basename(url)}' to WAV...")
+                cmd = ["ffmpeg", "-y", "-i", url, "-ar", str(self.target_sr), "-ac", "2", cached_wav]
+                subprocess.run(cmd, check=True, capture_output=True)
+            return cached_wav
             
         video_id = self.extract_video_id(url)
         cached_wav = os.path.join(self.cache_dir, f"{video_id}.wav")

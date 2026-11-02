@@ -1,23 +1,33 @@
 {
-  "output_name": "master_audio",
+  "output_name": "master_audio_2",
   "fade_in": 1.5,
   "fade_out": 2.0,
   "normalize": true,
   "tracks": [
     {
-      "url": "https://youtube.com/watch?v=hdcTmpvDO0I",
-      "title": "מוביט רגיל - כניסה כפול 2",
-      "start": "01:29",
-      "end": "01:42",
-      "repeat": 2,
+      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\WhatsApp Audio 2026-11-02 at 20.59.37.mp3",
+      "title": "WhatsApp Audio",
+      "start": "00:00",
+      "end": "00:53",
+      "repeat": 1,
       "crossfade": 2.0,
       "boost": 1.0,
       "direct_drop": false
     },
     {
-      "url": "https://youtube.com/watch?v=BFZRNsVqnvc",
-      "title": "טראנס מוביט",
-      "start": "01:15",
+      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\mix_2m50s (audio-joiner.com).mp3",
+      "title": "Mix Part 1 (20-42)",
+      "start": "00:20",
+      "end": "00:42",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.0,
+      "direct_drop": false
+    },
+    {
+      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\mix_2m50s (audio-joiner.com).mp3",
+      "title": "Mix Part 2 (1:22-1:54)",
+      "start": "01:22",
       "end": "01:54",
       "repeat": 1,
       "crossfade": 2.0,
@@ -25,60 +35,20 @@
       "direct_drop": false
     },
     {
-      "url": "https://youtu.be/PR2KMY4JmDE",
-      "title": "דימונה מחזור כג",
-      "start": "00:54",
-      "end": "01:14",
+      "url": "https://youtu.be/p2V4w9l1LkY",
+      "title": "Penguin Dance (8-24)",
+      "start": "00:08",
+      "end": "00:24",
       "repeat": 1,
       "crossfade": 2.0,
-      "boost": 1.0,
+      "boost": 1.2,
       "direct_drop": false
     },
     {
-      "url": "https://youtu.be/DJkp7WQB45Y",
-      "title": "יריות (Gunshots FX)",
-      "start": "01:22.7",
-      "end": "01:27.0",
-      "repeat": 1,
-      "crossfade": 0.0,
-      "boost": 1.4,
-      "direct_drop": true
-    },
-    {
-      "url": "https://youtu.be/DJkp7WQB45Y",
-      "title": "ישיבת שבחל תימון (חלק ב' - ווקאל)",
-      "start": "02:21",
-      "end": "02:31",
-      "repeat": 1,
-      "crossfade": 0.4,
-      "boost": 1.1,
-      "direct_drop": true
-    },
-    {
-      "url": "https://youtu.be/DJkp7WQB45Y",
-      "title": "ישיבת שבחל תימון (חלק א' - המשך)",
-      "start": "01:28",
-      "end": "02:01",
-      "repeat": 1,
-      "crossfade": 0.8,
-      "boost": 1.0,
-      "direct_drop": true
-    },
-    {
-      "url": "https://youtu.be/Rh6jfmTQwSA",
-      "title": "ישיבת רמלה מחזור ה",
-      "start": "00:47",
-      "end": "01:35",
-      "repeat": 1,
-      "crossfade": 2.0,
-      "boost": 1.0,
-      "direct_drop": false
-    },
-    {
-      "url": "https://youtu.be/NiTQ89FS-fE",
-      "title": "סיום Skazi RMX Outro",
-      "start": "01:05",
-      "end": "01:15",
+      "url": "https://youtu.be/ZdKINvOsppM",
+      "title": "OrganicSoup (57-1:07)",
+      "start": "00:57",
+      "end": "01:07",
       "repeat": 1,
       "crossfade": 2.0,
       "boost": 1.0,
@@ -86,4 +56,3 @@
     }
   ]
 }
-
