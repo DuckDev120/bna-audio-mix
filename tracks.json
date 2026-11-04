@@ -6,7 +6,7 @@
   "tracks": [
     {
       "url": "https://youtu.be/D8ExLZWD3k0",
-      "title": "עומר אדם - פתיחה (0:00-0:27)",
+      "title": "שם טוב האבי - פתיחה (0:00-0:27)",
       "start": "00:00",
       "end": "00:27",
       "repeat": 1,
@@ -16,11 +16,11 @@
     },
     {
       "url": "https://youtu.be/D8ExLZWD3k0",
-      "title": "אחד עומד ונואם (3:05-4:07)",
+      "title": "שם טוב האבי - אחד עומד ונואם (3:05-4:07)",
       "start": "03:05",
       "end": "04:07",
       "repeat": 1,
-      "crossfade": 2.0,
+      "crossfade": 1.0,
       "boost": 1.0,
       "direct_drop": false
     },
@@ -47,7 +47,7 @@
     {
       "url": "https://youtu.be/DJkp7WQB45Y",
       "title": "שבחל מחזור טימון - חלק א' (1:24-2:01)",
-      "start": "01:23",
+      "start": "01:23.5",
       "end": "02:01",
       "repeat": 1,
       "crossfade": 0.0,
@@ -60,7 +60,7 @@
       "start": "02:21",
       "end": "02:31",
       "repeat": 1,
-      "crossfade": 1.5,
+      "crossfade": 1.0,
       "boost": 1.1,
       "direct_drop": false
     },
