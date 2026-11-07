@@ -103,12 +103,25 @@
 
 ## 🎵 רשימת הרצועות הנוכחית של הפרויקט
 
-1. **מוביט רגיל - כניסה כפול 2**: `https://youtube.com/watch?v=hdcTmpvDO0I` (`01:29` – `01:42`, חזרה פעמיים).
-2. **טראנס מוביט**: `https://youtube.com/watch?v=BFZRNsVqnvc` (`01:15` – `01:54`).
-3. **דימונה מחזור כג**: `https://youtu.be/PR2KMY4JmDE` (`00:54` – `01:14`).
-4. **אפקט היריות**: `https://youtu.be/DJkp7WQB45Y` (`01:22.7` – `01:27.0`, `direct_drop: true`, `boost: 1.4`).
-5. **שבחל תימון (ווקאל)**: `https://youtu.be/DJkp7WQB45Y` (`02:21` – `02:31`, כניסה ישירה אחרי היריות).
-6. **שבחל תימון (המשך חלק א')**: `https://youtu.be/DJkp7WQB45Y` (`01:28` – `02:01`).
-7. **ישיבת רמלה מחזור ה**: `https://youtu.be/Rh6jfmTQwSA` (`00:47` – `01:35`).
-8. **סיום - Skazi RMX Outro**: `https://youtu.be/NiTQ89FS-fE` (`01:05` – `01:15`, כולל Fade Out של 2 שניות בסוף).
+### מיקס מאסטר 3 מעודכן (`master_audio_3.mp3` - 02:38):
+1. **בחור חדש**: `https://youtu.be/VprC9soNAys` (`00:01` – `00:29`, boost: 1.1).
+2. **שיר מחזור כ"ג**: `https://youtu.be/PR2KMY4JmDE` (`00:26` – `01:52`, crossfade: 2.0s).
+3. **מחזור כ"ד - ריקוד קטן (חלק א')**: `https://youtu.be/HUL75au7xRQ` (`00:33` – `01:12`, crossfade: 2.0s).
+4. **מחזור כ"ד - ריקוד קטן (חלק ב')**: `https://youtu.be/HUL75au7xRQ` (`02:18` – `02:29`, crossfade: 2.0s, fade out בסוף: 2.0s).
+
+---
+
+### פרויקטים ומיקסים קודמים בארכיון:
+- **פרויקט 1 (`master_audio.mp3` - 04:01)**: שמור גם ב-`tracks_project1.json`.
+  1. שם טוב האבי - פתיחה (`00:00` - `00:27`)
+  2. שם טוב האבי - אחד עומד ונואם (`03:05` - `04:07`)
+  3. טראנס מוב איט (`01:15` - `01:54`)
+  4. דימונה מחזור כג (`00:54` - `01:14`)
+  5. שבחל מחזור טימון א' (`01:23.5` - `02:01`, direct_drop)
+  6. שבחל מחזור טימון ב' (`02:21` - `02:31`)
+  7. ישיבת רמלה מחזור ה (`00:47` - `01:35`)
+  8. סיום Skazi RMX Outro (`01:05` - `01:15`)
+- **פרויקט 2 (`master_audio_2.mp3` - 02:07)**: WhatsApp Audio + Mix slices + Penguin Dance + OrganicSoup + Voice note overlay.
+- **פרויקט 3 המקורי (`master_audio_3_original.mp3` - 01:52)**: שמור גם ב-`tracks_master3_original.json` (בחור חדש + מחזור כ"ג בלבד).
+
 

@@ -81,7 +81,7 @@ class AudioMixer:
             "-f", "ba/b",
             "-x", "--audio-format", "wav",
             "-o", os.path.join(self.cache_dir, f"{video_id}.%(ext)s"),
-            f"https://www.youtube.com/watch?v=video_id" if len(video_id)==11 else url
+            f"https://www.youtube.com/watch?v={video_id}" if len(video_id)==11 else url
         ]
         res = subprocess.run(cmd, capture_output=True, text=True)
         if not os.path.exists(cached_wav):

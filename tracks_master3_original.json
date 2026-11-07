@@ -1,0 +1,28 @@
+{
+  "output_name": "master_audio_3_original",
+  "fade_in": 1.5,
+  "fade_out": 2.0,
+  "normalize": true,
+  "tracks": [
+    {
+      "url": "https://youtu.be/VprC9soNAys",
+      "title": "בחור חדש",
+      "start": "00:01",
+      "end": "00:29",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.1,
+      "direct_drop": false
+    },
+    {
+      "url": "https://youtu.be/PR2KMY4JmDE",
+      "title": "שיר מחזור כ\"ג",
+      "start": "00:26",
+      "end": "01:52",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.0,
+      "direct_drop": false
+    }
+  ]
+}
