@@ -1,0 +1,68 @@
+{
+  "output_name": "master_audio_2",
+  "fade_in": 1.5,
+  "fade_out": 2.0,
+  "normalize": true,
+  "tracks": [
+    {
+      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\WhatsApp Audio 2026-11-02 at 20.59.37.mp3",
+      "title": "WhatsApp Audio",
+      "start": "00:00",
+      "end": "00:53",
+      "repeat": 1,
+      "crossfade": 0.0,
+      "boost": 1.0,
+      "direct_drop": false,
+      "fade_out": 1.0
+    },
+    {
+      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\mix_2m50s (audio-joiner.com).mp3",
+      "title": "Mix Part 1 (20-42)",
+      "start": "00:20",
+      "end": "00:42",
+      "repeat": 1,
+      "crossfade": 0.0,
+      "boost": 1.0,
+      "direct_drop": false,
+      "fade_in": 2.0
+    },
+    {
+      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\mix_2m50s (audio-joiner.com).mp3",
+      "title": "Mix Part 2 (1:22-1:54)",
+      "start": "01:22",
+      "end": "01:54",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.0,
+      "direct_drop": false
+    },
+    {
+      "url": "https://youtu.be/p2V4w9l1LkY",
+      "title": "Penguin Dance (8-24)",
+      "start": "00:08",
+      "end": "00:24",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.2,
+      "direct_drop": false
+    },
+    {
+      "url": "https://youtu.be/ZdKINvOsppM",
+      "title": "OrganicSoup (57-1:07)",
+      "start": "00:57",
+      "end": "01:07",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.0,
+      "direct_drop": false
+    }
+  ],
+  "overlays": [
+    {
+      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\shevet_maalot_hachayot.ogg",
+      "title": "שבט מעלות החיות",
+      "start_at": 51.0,
+      "volume": 1.8
+    }
+  ]
+}
