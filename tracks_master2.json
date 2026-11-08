@@ -60,9 +60,9 @@
   "overlays": [
     {
       "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\shevet_maalot_hachayot.ogg",
-      "title": "שבט מעלות החיות",
+      "title": "שבט מעלות החיות (משופר)",
       "start_at": 51.0,
-      "volume": 1.8
+      "volume": 1.3
     }
   ]
 }
