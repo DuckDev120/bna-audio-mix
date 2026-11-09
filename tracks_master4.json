@@ -1,0 +1,28 @@
+{
+  "output_name": "master_audio_4",
+  "fade_in": 1.5,
+  "fade_out": 2.0,
+  "normalize": true,
+  "tracks": [
+    {
+      "url": "https://youtu.be/1YVywktUqA8",
+      "title": "רביד פלוטניק - גיבור (0:00-0:22)",
+      "start": "00:00",
+      "end": "00:22",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.0,
+      "direct_drop": false
+    },
+    {
+      "url": "https://youtu.be/k_IXzAnT8HA",
+      "title": "אמגושא - נחמה (0:00-0:52)",
+      "start": "00:00",
+      "end": "00:52",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.0,
+      "direct_drop": false
+    }
+  ]
+}
