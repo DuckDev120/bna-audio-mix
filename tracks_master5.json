@@ -10,19 +10,30 @@
       "start": "00:00",
       "end": "01:12.5",
       "repeat": 1,
-      "crossfade": 2.0,
+      "crossfade": 0.0,
       "boost": 1.0,
-      "direct_drop": false
+      "direct_drop": false,
+      "fade_out": 0.3
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dz6Lp_PyX_Q",
+      "title": "אפקט בום ומעבר (Cinematic Boom FX)",
+      "start": "00:00",
+      "end": "00:02.3",
+      "repeat": 1,
+      "crossfade": 0.2,
+      "boost": 1.25,
+      "direct_drop": true
     },
     {
       "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\recording_project5.mp3",
-      "title": "הקלטה (0:28-סוף)",
+      "title": "הקלטה - האף מדרבי (0:28-סוף)",
       "start": "00:28",
       "end": "01:52",
       "repeat": 1,
-      "crossfade": 2.0,
-      "boost": 1.15,
-      "direct_drop": false
+      "crossfade": 0.3,
+      "boost": 1.25,
+      "direct_drop": true
     }
   ]
 }
