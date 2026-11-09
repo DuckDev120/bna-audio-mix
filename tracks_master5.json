@@ -1,0 +1,28 @@
+{
+  "output_name": "master_audio_5",
+  "fade_in": 1.5,
+  "fade_out": 2.0,
+  "normalize": true,
+  "tracks": [
+    {
+      "url": "https://www.youtube.com/watch?v=BEsQe8uDK-8",
+      "title": "אורי דוידי - מוכנים (0:00-1:07)",
+      "start": "00:00",
+      "end": "01:07",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.0,
+      "direct_drop": false
+    },
+    {
+      "url": "C:\\Users\\Admin\\Desktop\\bna-audio-mix\\recording_project5.mp3",
+      "title": "הקלטה (0:28-סוף)",
+      "start": "00:28",
+      "end": "01:52",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.15,
+      "direct_drop": false
+    }
+  ]
+}
