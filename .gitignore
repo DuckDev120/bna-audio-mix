@@ -4,6 +4,7 @@ cache/
 # Large uncompressed audio (keep locally on disk, keep repo lightweight)
 *.wav
 output/*.wav
+plylist/
 
 # Python bytecode & cache
 __pycache__/
