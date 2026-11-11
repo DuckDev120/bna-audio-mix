@@ -6,11 +6,33 @@
   "tracks": [
     {
       "url": "https://youtu.be/43AZA8gYh00",
-      "title": "שילה אליה - מחיאת כף (0:00-1:03)",
+      "title": "שילה אליה - מחיאת כף (0:00-1:02.5)",
       "start": "00:00",
-      "end": "01:03",
+      "end": "01:02.5",
       "repeat": 1,
-      "crossfade": 2.0,
+      "crossfade": 0.0,
+      "boost": 1.0,
+      "fade_out": 0.25,
+      "direct_drop": false
+    },
+    {
+      "url": "cache/studio_riser_cinematic.wav",
+      "title": "הפסקה סינמטית + Studio Riser FX",
+      "start": "00:00",
+      "end": "00:02.95",
+      "repeat": 1,
+      "crossfade": 0.6,
+      "boost": 1.0,
+      "fade_in": 0.1,
+      "direct_drop": false
+    },
+    {
+      "url": "https://youtu.be/63R54TBR_kE",
+      "title": "איציק ואבישי אשל - רבנו הקדוש (0:36-1:10)",
+      "start": "00:36",
+      "end": "01:10",
+      "repeat": 1,
+      "crossfade": 0.0,
       "boost": 1.0,
       "direct_drop": false
     },
@@ -19,16 +41,6 @@
       "title": "שון גיטלמן - בואי לסרט (0:46-1:16)",
       "start": "00:46",
       "end": "01:16",
-      "repeat": 1,
-      "crossfade": 2.0,
-      "boost": 1.0,
-      "direct_drop": false
-    },
-    {
-      "url": "https://youtu.be/63R54TBR_kE",
-      "title": "איציק ואבישי אשל - רבנו הקדוש (0:36-1:10)",
-      "start": "00:36",
-      "end": "01:10",
       "repeat": 1,
       "crossfade": 2.0,
       "boost": 1.0,
