@@ -6,35 +6,34 @@
   "tracks": [
     {
       "url": "https://youtu.be/43AZA8gYh00",
-      "title": "שילה אליה - מחיאת כף (0:00-1:02.5)",
+      "title": "שילה אליה - מחיאת כף (0:00-1:01.85)",
       "start": "00:00",
-      "end": "01:02.5",
+      "end": "01:01.85",
       "repeat": 1,
       "crossfade": 0.0,
       "boost": 1.0,
-      "fade_out": 0.25,
+      "fade_out": 0.06,
       "direct_drop": false
     },
     {
-      "url": "cache/studio_riser_cinematic.wav",
-      "title": "הפסקה סינמטית + Studio Riser FX",
-      "start": "00:00",
-      "end": "00:02.95",
+      "url": "cache/Am4wYTiHHx8.wav",
+      "title": "Studio Riser Sweep (1.6s Build-up)",
+      "start": "00:03.65",
+      "end": "00:05.25",
       "repeat": 1,
-      "crossfade": 0.6,
+      "crossfade": 0.35,
       "boost": 1.0,
-      "fade_in": 0.1,
       "direct_drop": false
     },
     {
       "url": "https://youtu.be/63R54TBR_kE",
-      "title": "איציק ואבישי אשל - רבנו הקדוש (0:36-1:10)",
-      "start": "00:36",
-      "end": "01:10",
+      "title": "איציק ואבישי אשל - רבנו הקדוש (0:36.90-1:10)",
+      "start": "00:36.90",
+      "end": "01:10.00",
       "repeat": 1,
       "crossfade": 0.0,
       "boost": 1.0,
-      "direct_drop": false
+      "direct_drop": true
     },
     {
       "url": "https://youtu.be/mbVhZ9OUFMY",
@@ -45,6 +44,14 @@
       "crossfade": 2.0,
       "boost": 1.0,
       "direct_drop": false
+    }
+  ],
+  "overlays": [
+    {
+      "url": "cache/dz6Lp_PyX_Q.wav",
+      "title": "Cinematic Sub-Bass Boom Impact",
+      "start_at": 63.10,
+      "volume": 0.65
     }
   ]
 }
