@@ -1,0 +1,38 @@
+{
+  "output_name": "master_audio_6",
+  "fade_in": 1.5,
+  "fade_out": 2.0,
+  "normalize": true,
+  "tracks": [
+    {
+      "url": "https://youtu.be/43AZA8gYh00",
+      "title": "שילה אליה - מחיאת כף (0:00-1:03)",
+      "start": "00:00",
+      "end": "01:03",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.0,
+      "direct_drop": false
+    },
+    {
+      "url": "https://youtu.be/mbVhZ9OUFMY",
+      "title": "שון גיטלמן - בואי לסרט (0:46-1:16)",
+      "start": "00:46",
+      "end": "01:16",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.0,
+      "direct_drop": false
+    },
+    {
+      "url": "https://youtu.be/63R54TBR_kE",
+      "title": "איציק ואבישי אשל - רבנו הקדוש (0:36-1:10)",
+      "start": "00:36",
+      "end": "01:10",
+      "repeat": 1,
+      "crossfade": 2.0,
+      "boost": 1.0,
+      "direct_drop": false
+    }
+  ]
+}
